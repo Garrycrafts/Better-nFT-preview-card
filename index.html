@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main
+      class="text-P text-Primary-size bg-Blue-950 relative z-10 flex h-screen min-w-screen items-center justify-center overflow-auto overflow-x-hidden pb-2"
+    >
+      <div
+        class="bg-amber-00 absolute z-20 h-[650px] w-[400px] translate-y-5 rounded-4xl bg-blue-950/10 pb-5"
+      ></div>
+      <div
+        class="bg-amber-00 bg-Blue-950 absolute z-20 h-[590px] w-[340px] translate-y-6 rounded-4xl pb-5"
+      ></div>
+      <div class="relative z-30 h-[551] w-[316px] rounded-2xl bg-blue-900 p-5">
+        <div class="flex flex-col justify-center">
+          <div class="group relative w-[279px]">
+            <!-- Image -->
+            <img
+              src="/images/image-equilibrium.jpg"
+              alt="Equilibrium"
+              class="mb-[23px] w-full rounded-md"
+            />
+
+            <!-- Gradient overlay -->
+            <div
+              class="bg-Cyan-400 absolute inset-0 flex h-[278px] cursor-pointer items-center justify-center rounded-md opacity-0 transition group-hover:opacity-70"
+            >
+              <!-- Eye icon -->
+              <img src="/images/icon-view.svg" alt="View" class="h-fit w-fit" />
+            </div>
+          </div>
+
+          <section class="w-[279px]">
+            <h1
+              class="text-White hover:text-Cyan-400 mb-[22px] font-semibold hover:cursor-pointer"
+            >
+              Equilibrium #3429
+            </h1>
+            <p class="text-Blue-500 mb-[30px] text-base">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+
+            <span class="mb-[26px] flex place-content-between">
+              <div class="flex items-center">
+                <img src="/images/icon-ethereum.svg" alt="" />
+                <p class="text-Cyan-400 ml-1">0.041 ETH</p>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/icon-clock.svg" alt="" />
+                <p class="text-Blue-500 ml-1">3 days left</p>
+              </div>
+            </span>
+            <!-- Line -->
+            <div class="border-Blue-800 mb-[25px] border-[1px]"></div>
+            <span class="flex items-center">
+              <img
+                src="/images/image-avatar.png"
+                class="inline h-[26px] w-[26px]"
+                alt=""
+              />
+
+              <p class="text-Blue-500 ml-4">Creation of</p>
+              <p
+                class="hover:text-Cyan-400 ml-2 text-white hover:cursor-pointer"
+              >
+                Jules Wyvern
+              </p>
+            </span>
+          </section>
+        </div>
+        <!-- <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
